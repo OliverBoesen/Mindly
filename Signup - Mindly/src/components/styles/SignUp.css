@@ -1,0 +1,122 @@
+/* src/styles/Login.css */
+
+body {
+    min-height: 100vh;
+    background: rgb(247, 117, 107);
+    background: linear-gradient(225deg, rgba(247, 117, 107, 1) 0%, rgba(251, 198, 115, 1) 70%);
+    background-repeat: no-repeat;
+    font-family: "roca", sans-serif;
+    font-style: normal;
+}
+
+:root {
+    --font-thin: 100;
+    --font-regular: 400;
+    --font-bold: 700;
+
+    --font-h1: 4rem;
+    --font-h2: 2.7rem;
+    --font-h3: 2.2rem;
+    --font-h4: 1.7rem;
+    --font-p: 1.3rem;
+
+    --clr-red: #F7756B;
+    --clr-yellow: #FBC673;
+    --clr-black: #000;
+    --clr-grey: #4C4C4C;
+    --clr-white: #fff;
+
+    --box-shadow: rgba(0, 0, 0, 0.25);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.signup-overskrift {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.signup-overskrift h1 {
+    font-size: var(--font-h1);
+    font-weight: var(--font-bold);
+    font-family: "roca", sans-serif;
+    font-style: normal;
+}
+
+.signup-overskrift p {
+    font-size: var(--font-p);
+    font-weight: var(--font-thin);
+}
+
+.signup-overskrift a {
+    color: var(--clr-black);
+    font-weight: var(--font-bold);
+}
+
+input {
+    padding: 1rem;
+    border: var(--clr-grey) 1px solid;
+    border-radius: 10px;
+    width: 17rem;
+}
+
+.signup-container {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.signup-password h3, .signup-confirm-password h3, .signup-call-you h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    margin-left: 4rem;
+    font-weight: var(--font-regular);
+}
+
+.signup-email h3 {
+    text-align: left;
+    margin-bottom: 0.5rem;
+    margin-left: 4rem;
+    font-weight: var(--font-regular);
+}
+
+.signup-button button {
+    padding: 0.5rem;
+    background-color: var(--clr-red);
+    display: block;
+    margin: -9rem auto;
+    color: var(--clr-white);
+    width: 13rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+
+.signup-button p {
+    font-weight: var(--font-bold);
+    font-size: var(--font-p);
+}
+
+.signup-streg img {
+    z-index: -1;
+    position: relative;
+    margin-top: -13rem;
+    width: 25rem;
+    height: 25rem;
+}
+
+.signup-already-acc {
+    z-index: 1;
+    margin-top: 14rem;
+    text-align: center;
+}
+
+.signup-already-acc a {
+    color: var(--clr-black);
+}
